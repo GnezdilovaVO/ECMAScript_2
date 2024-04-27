@@ -8,6 +8,19 @@
 // Свойство pages (количество страниц) - число, количество страниц в книге.
 // Метод displayInfo() - выводит информацию о книге (название, автор и количество страниц).
 
+const book = {
+  title: "...",
+  author: "...",
+  pages: 0,
+  displayInfo() {
+    return `Книга ${this.title}. Автора ${this.author}, содержит в себе ${this.pages}.`;
+  },
+};
+book.title = "Harry Potter and philosopher's stone";
+book.author = "J. K. Rowling";
+book.pages = 320;
+console.log(book.displayInfo());
+
 class Book {
   constructor(title, author, pages) {
     this.title = title;
